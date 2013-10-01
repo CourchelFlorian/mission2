@@ -40,7 +40,7 @@
             // lab_connexion
             // 
             this.lab_connexion.AutoSize = true;
-            this.lab_connexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_connexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_connexion.Location = new System.Drawing.Point(199, 30);
             this.lab_connexion.Name = "lab_connexion";
             this.lab_connexion.Size = new System.Drawing.Size(213, 46);
@@ -91,6 +91,7 @@
             this.btn_se_connecter.TabIndex = 5;
             this.btn_se_connecter.Text = "Se connecter";
             this.btn_se_connecter.UseVisualStyleBackColor = true;
+            this.btn_se_connecter.Click += new System.EventHandler(this.btn_se_connecter_Click);
             // 
             // btn_quitter
             // 
@@ -105,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 411);
+            this.ClientSize = new System.Drawing.Size(618, 411);
             this.Controls.Add(this.btn_quitter);
             this.Controls.Add(this.btn_se_connecter);
             this.Controls.Add(this.txt_mdp);
@@ -115,6 +116,7 @@
             this.Controls.Add(this.lab_connexion);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

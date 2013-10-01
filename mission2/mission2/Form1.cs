@@ -25,5 +25,15 @@ namespace mission2
         {
 
         }
+
+        private void btn_se_connecter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

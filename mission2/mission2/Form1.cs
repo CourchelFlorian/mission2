@@ -11,6 +11,7 @@ namespace mission2
 {
     public partial class Form1 : Form
     {
+        AdherantDao verif = new AdherantDao();
         public Form1()
         {
             InitializeComponent();
@@ -30,8 +31,21 @@ namespace mission2
         {
             // Si verifUtilisateur retourne 2 alors il a planté
             //Ouvre un autre formulaire 
-            Form_adherant frm = new Form_adherant();
-            frm.Show();
+            String nom = txt_nom_utilisateur.Text;
+            string mdp = txt_mdp.Text;
+
+            Form_admin frm = new Form_admin();
+            Form_adherant frma = new Form_adherant();
+            Int32 Droit = verif.verifUtilisateur(nom, mdp);//stockage de la valeur de droit du gars qui se co
+            if (Droit == 1)
+            {
+                frm.Show();
+            }
+
+            else
+            {
+                frma.Show();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

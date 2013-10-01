@@ -16,7 +16,7 @@ namespace mission2
 
             SqlConnection maConnexion; //déclaration d’un objet Command
             SqlCommand maCommande;
-            string sqlStr = "Select * from Adherant where nom =" + pNom + " And mdp =" + pMdp ;
+            string sqlStr = "Select * from Adherant where nom = '"+ pNom +"' And mdp = '" + pMdp+"'" ;
             Int32 retour = 2;//si erreur
 
             try
@@ -37,7 +37,6 @@ namespace mission2
             {
                 
             }
-
             return (retour);
         }
     }

@@ -9,7 +9,7 @@ namespace mission2
 {
     class AdherantDao
     {
-        public void verifUtilisateur (String pNom, String pMdp)
+        public Int32 verifUtilisateur (String pNom, String pMdp)
         {
             Form1 Application = new Form1();
             string connStr = "Data Source = WIN-921C8FKTGAE; Initial Catalog=m2lCK ;User ID=sio2slam;Password=" ;
@@ -17,6 +17,7 @@ namespace mission2
             SqlConnection maConnexion; //déclaration d’un objet Command
             SqlCommand maCommande;
             string sqlStr = "Select * from Adherant where nom =" + pNom + " And mdp =" + pMdp ;
+            Int32 retour = 2;//si erreur
 
             try
             {
@@ -27,17 +28,16 @@ namespace mission2
                 SqlDataReader unJeuResultat = maCommande.ExecuteReader();
                 if (unJeuResultat.Read())
                 {
-
+                    retour = (Int32)unJeuResultat["droit"];
                 }
-
-                else
-                {
-                }
+                
             }
 
             catch (Exception e)
             {
+                
             }
+            return (retour);
         }
     }
 }

@@ -28,12 +28,20 @@ namespace mission2
 
         private void btn_se_connecter_Click(object sender, EventArgs e)
         {
-
+            // Si verifUtilisateur retourne 2 alors il a planté
+            //Ouvre un autre formulaire 
+            Form_admin frm = new Form_admin();
+            frm.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_quitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

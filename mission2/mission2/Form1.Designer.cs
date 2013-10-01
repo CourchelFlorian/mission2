@@ -101,6 +101,7 @@
             this.btn_quitter.TabIndex = 6;
             this.btn_quitter.Text = "Quitter";
             this.btn_quitter.UseVisualStyleBackColor = true;
+            this.btn_quitter.Click += new System.EventHandler(this.btn_quitter_Click);
             // 
             // Form1
             // 

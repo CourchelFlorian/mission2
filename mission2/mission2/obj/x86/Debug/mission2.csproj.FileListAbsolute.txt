@@ -9,3 +9,5 @@ C:\Users\SIO2\Desktop\PPE_Alex\mission2\mission2\obj\x86\Debug\mission2.exe
 C:\Users\SIO2\Desktop\PPE_Alex\mission2\mission2\obj\x86\Debug\mission2.pdb
 C:\Users\SIO2\Desktop\PPE_Alex\mission2\mission2\obj\x86\Debug\mission2.Form_admin.resources
 C:\Users\SIO2\Desktop\PPE_Alex\mission2\mission2\obj\x86\Debug\mission2.Form_adherant.resources
+C:\Users\SIO2\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.exe
+C:\Users\SIO2\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.pdb

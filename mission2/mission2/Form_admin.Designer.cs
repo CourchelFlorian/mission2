@@ -30,13 +30,21 @@
         {
             this.btn_consulter_demande = new System.Windows.Forms.Button();
             this.btn_editer_fact = new System.Windows.Forms.Button();
-            this.lab_test = new System.Windows.Forms.Label();
+            this.tableau_demande = new System.Windows.Forms.DataGridView();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantité = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prix = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_quitter = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.tableau_demande)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_consulter_demande
             // 
             this.btn_consulter_demande.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consulter_demande.Location = new System.Drawing.Point(53, 45);
+            this.btn_consulter_demande.Location = new System.Drawing.Point(195, 45);
             this.btn_consulter_demande.Name = "btn_consulter_demande";
             this.btn_consulter_demande.Size = new System.Drawing.Size(172, 40);
             this.btn_consulter_demande.TabIndex = 0;
@@ -47,36 +55,84 @@
             // btn_editer_fact
             // 
             this.btn_editer_fact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editer_fact.Location = new System.Drawing.Point(359, 45);
+            this.btn_editer_fact.Location = new System.Drawing.Point(515, 45);
             this.btn_editer_fact.Name = "btn_editer_fact";
             this.btn_editer_fact.Size = new System.Drawing.Size(162, 40);
             this.btn_editer_fact.TabIndex = 1;
             this.btn_editer_fact.Text = "Editer les factures";
             this.btn_editer_fact.UseVisualStyleBackColor = true;
             // 
-            // lab_test
+            // tableau_demande
             // 
-            this.lab_test.AutoSize = true;
-            this.lab_test.Location = new System.Drawing.Point(61, 124);
-            this.lab_test.Name = "lab_test";
-            this.lab_test.Size = new System.Drawing.Size(24, 13);
-            this.lab_test.TabIndex = 2;
-            this.lab_test.Text = "test";
-            this.lab_test.Visible = false;
-            this.lab_test.Click += new System.EventHandler(this.label1_Click);
+            this.tableau_demande.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableau_demande.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nom,
+            this.Service,
+            this.Quantité,
+            this.prix,
+            this.Etat,
+            this.Date});
+            this.tableau_demande.Location = new System.Drawing.Point(118, 126);
+            this.tableau_demande.Name = "tableau_demande";
+            this.tableau_demande.Size = new System.Drawing.Size(663, 150);
+            this.tableau_demande.TabIndex = 2;
+            this.tableau_demande.Visible = false;
+            this.tableau_demande.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableau_demande_CellContentClick);
+            // 
+            // Nom
+            // 
+            this.Nom.HeaderText = "Nom";
+            this.Nom.Name = "Nom";
+            // 
+            // Service
+            // 
+            this.Service.HeaderText = "Service";
+            this.Service.Name = "Service";
+            // 
+            // Quantité
+            // 
+            this.Quantité.HeaderText = "Quantité";
+            this.Quantité.Name = "Quantité";
+            // 
+            // prix
+            // 
+            this.prix.HeaderText = "prix";
+            this.prix.Name = "prix";
+            // 
+            // Etat
+            // 
+            this.Etat.HeaderText = "Etat";
+            this.Etat.Name = "Etat";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // btn_quitter
+            // 
+            this.btn_quitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quitter.Location = new System.Drawing.Point(709, 319);
+            this.btn_quitter.Name = "btn_quitter";
+            this.btn_quitter.Size = new System.Drawing.Size(172, 40);
+            this.btn_quitter.TabIndex = 3;
+            this.btn_quitter.Text = "Quitter";
+            this.btn_quitter.UseVisualStyleBackColor = true;
+            this.btn_quitter.Click += new System.EventHandler(this.btn_quitter_Click);
             // 
             // Form_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 371);
-            this.Controls.Add(this.lab_test);
+            this.ClientSize = new System.Drawing.Size(917, 371);
+            this.Controls.Add(this.btn_quitter);
+            this.Controls.Add(this.tableau_demande);
             this.Controls.Add(this.btn_editer_fact);
             this.Controls.Add(this.btn_consulter_demande);
             this.Name = "Form_admin";
             this.Text = "Form_admin";
+            ((System.ComponentModel.ISupportInitialize)(this.tableau_demande)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -84,6 +140,13 @@
 
         private System.Windows.Forms.Button btn_consulter_demande;
         private System.Windows.Forms.Button btn_editer_fact;
-        private System.Windows.Forms.Label lab_test;
+        private System.Windows.Forms.DataGridView tableau_demande;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Service;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantité;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prix;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Etat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.Button btn_quitter;
     }
 }

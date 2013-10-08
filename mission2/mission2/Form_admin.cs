@@ -18,12 +18,22 @@ namespace mission2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            lab_test.Visible = true;
+            tableau_demande.Visible = true;
+            ServiceDao liste = new ServiceDao();
+            liste.listerServices(tableau_demande);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void tableau_demande_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void btn_quitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+       
     }
 }

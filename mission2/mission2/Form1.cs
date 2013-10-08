@@ -14,7 +14,7 @@ namespace mission2
         AdherantDao verif = new AdherantDao();
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -50,12 +50,12 @@ namespace mission2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_quitter_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit();          
         }
     }
 }

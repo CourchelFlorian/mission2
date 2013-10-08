@@ -55,7 +55,11 @@
             // btn_editer_fact
             // 
             this.btn_editer_fact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.btn_editer_fact.Location = new System.Drawing.Point(515, 45);
+
+            this.btn_editer_fact.Location = new System.Drawing.Point(363, 45);
+
             this.btn_editer_fact.Name = "btn_editer_fact";
             this.btn_editer_fact.Size = new System.Drawing.Size(162, 40);
             this.btn_editer_fact.TabIndex = 1;

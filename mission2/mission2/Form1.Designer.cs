@@ -96,9 +96,9 @@
             // 
             // btn_quitter
             // 
-            this.btn_quitter.Location = new System.Drawing.Point(444, 348);
+            this.btn_quitter.Location = new System.Drawing.Point(533, 362);
             this.btn_quitter.Name = "btn_quitter";
-            this.btn_quitter.Size = new System.Drawing.Size(151, 41);
+            this.btn_quitter.Size = new System.Drawing.Size(73, 37);
             this.btn_quitter.TabIndex = 6;
             this.btn_quitter.Text = "Quitter";
             this.btn_quitter.UseVisualStyleBackColor = true;

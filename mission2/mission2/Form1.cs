@@ -30,22 +30,30 @@ namespace mission2
         private void btn_se_connecter_Click(object sender, EventArgs e)
         {
             // Si verifUtilisateur retourne 2 alors il a planté
-            //Ouvre un autre formulaire 
+            //Ouvre un autre formulaire
+            
             String nom = txt_nom_utilisateur.Text;
             string mdp = txt_mdp.Text;
 
             Form_admin frm = new Form_admin();
-            Form_adherant frma = new Form_adherant();
+            Int32 numUtil = verif.getNum(nom);
+            Form_adherant frma = new Form_adherant(numUtil);
             Int32 Droit = verif.verifUtilisateur(nom, mdp);//stockage de la valeur de droit du gars qui se co
             if (Droit == 1)
             {
                 frm.Show();
             }
 
-            else
+            else if (Droit == 0)
             {
                 frma.Show();
             }
+
+            else
+            {
+                MessageBox.Show("Connection impossible");
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

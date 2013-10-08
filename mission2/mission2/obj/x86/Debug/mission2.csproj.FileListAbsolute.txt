@@ -21,3 +21,14 @@ C:\Users\SIO2\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2
 C:\Users\SIO2\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.Properties.Resources.resources
 C:\Users\SIO2\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\SIO2\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\bin\Debug\mission2.exe.config
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.exe
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.pdb
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\bin\Debug\mission2.exe
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\bin\Debug\mission2.pdb
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.csprojResolveAssemblyReference.cache
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.Form1.resources
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.Form_adherant.resources
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.Form_admin.resources
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.Properties.Resources.resources
+C:\Users\Sio1\Documents\GitHub\mission2\mission2\mission2\obj\x86\Debug\mission2.csproj.GenerateResource.Cache

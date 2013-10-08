@@ -11,10 +11,20 @@ namespace mission2
 {
     public partial class Form_adherant : Form
     {
+        AdherantDao adherant = new AdherantDao();
+        Int32 numUtil = 0;
         public Form_adherant()
         {
             InitializeComponent();
+            numUtil = 0;
         }
+
+        public Form_adherant(Int32 pNumUtil)
+        {
+            InitializeComponent();
+            numUtil = pNumUtil;
+        }
+
 
         private void lab_connexion_Click(object sender, EventArgs e)
         {
@@ -40,6 +50,26 @@ namespace mission2
             // TODO: cette ligne de code charge les données dans la table 'm2lCKDataSet.Service'. Vous pouvez la déplacer ou la supprimer selon vos besoins.
             this.serviceTableAdapter.Fill(this.m2lCKDataSet.Service);
 
+        }
+
+        private void combo_services_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Quantitée_Click(object sender, EventArgs e)
+        {
+            Int32 Type = (Int32)combo_services.SelectedValue;
+            Int32 Quantitée = Convert.ToInt32(txt_Quantitée.Text);
+            adherant.ajouterDemande(Quantitée, Type, numUtil);
+            txt_Quantitée.Text = "";
+            MessageBox.Show("demande enregistrée");
+
+        }
+
+        private void btn_Quitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

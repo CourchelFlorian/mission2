@@ -33,6 +33,16 @@ namespace mission2
             Application.Exit();
         }
 
+        private void btn_quitter_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
 
        
     }

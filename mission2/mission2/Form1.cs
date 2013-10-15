@@ -34,9 +34,8 @@ namespace mission2
             
             String nom = txt_nom_utilisateur.Text;
             string mdp = txt_mdp.Text;
-
-            Form_admin frm = new Form_admin();
             Int32 numUtil = verif.getNum(nom);
+            Form_admin frm = new Form_admin(numUtil);            
             Form_adherant frma = new Form_adherant(numUtil);
             Int32 Droit = verif.verifUtilisateur(nom, mdp);//stockage de la valeur de droit du gars qui se co
             if (Droit == 1)
